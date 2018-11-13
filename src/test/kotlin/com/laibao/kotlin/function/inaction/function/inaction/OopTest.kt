@@ -21,5 +21,6 @@ class OopTest {
         println(cupCake.flavour)
         cupCake.flavour = "asfdasdfasf"
         println(cupCake.flavour)
+        println("My cupcake has ${cupCake.flavour}")
     }
 }
