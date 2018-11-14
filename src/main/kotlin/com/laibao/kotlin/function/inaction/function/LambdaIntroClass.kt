@@ -4,6 +4,8 @@ package com.laibao.kotlin.function.inaction.function
  * @author laibao wang
  */
 class LambdaIntroClass {
+    val sum = { x: Int, y: Int -> x + y }
+
     fun invokeSomeStuff(someInterface: SomeInterface) {
         someInterface.doSomeStuff()
     }
@@ -28,4 +30,7 @@ fun main(args: Array<String>) {
     lambdaIntroClass.invokeSomeStuffAction({println("doSomeStuff called")})
     println()
     lambdaIntroClass.invokeSomeStuffAction { println("asdfasfasf")}
+    println()
+
+    println(lambdaIntroClass.sum(100,100))
 }
