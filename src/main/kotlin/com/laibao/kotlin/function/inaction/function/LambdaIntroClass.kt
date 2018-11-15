@@ -33,4 +33,22 @@ fun main(args: Array<String>) {
     println()
 
     println(lambdaIntroClass.sum(100,100))
+
+    val customer1 = Customer("John", "Carl", "Doe", "XX234", 82.3, 180)
+
+    val customer2 = Customer(
+            lastName = "Doe",
+            firstName = "John",
+            middleName = "Carl",
+            height = 180,
+            weight = 82.3,
+            passportNumber = "XX234")
+
+    val programmer1 = Programmer("John", "Doe")
+
+    //val programmer2 = Programmer("John", "Doe", 12) //Error
+
+    val programmer2 = Programmer("John", "Doe", yearsOfExperience = 12) //OK
+
+    val programmer3 = Programmer("John", "Doe", "TypeScript", 1)
 }
